@@ -19,13 +19,14 @@ const Home: NextPage = () => {
           width={400}
           height={400}
           loading="eager"
+          alt="HackSC 2022 Logo"
         />
         <code style={{ backgroundColor: "dimgray", padding: "0.5rem" }}>
           {"2023 == Promise {<pending>}"}
         </code>
         <p style={{ marginTop: "2rem" }}>Meanwhile check out:</p>
         <GenericButton href={designRecruitmentLink} passHref>
-          Spring'22 Design Recruitment!
+          Spring{`'`}22 Design Recruitment!
         </GenericButton>
       </div>
     </>
