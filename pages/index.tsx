@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           {"2023 == Promise {<pending>}"}
         </code>
         <p style={{ marginTop: "2rem" }}>Meanwhile check out:</p>
-        <GenericButton href={designRecruitmentLink} passHref>
+        <GenericButton href={designRecruitmentLink} passHref target="_blank">
           Spring{`'`}22 Design Recruitment!
         </GenericButton>
       </div>
