@@ -12,7 +12,8 @@ declare type Url = string | UrlObject;
 type OptionalLinkProps = Omit<LinkProps, "href"> & { href?: Url };
 type GenericButtonProps =
   | React.ButtonHTMLAttributes<any> &
-      React.PropsWithChildren<OptionalLinkProps>;
+      React.PropsWithChildren<OptionalLinkProps> &
+      React.AnchorHTMLAttributes<any>;
 
 /**
  *  Prefer using this over a normal button; this has accessibility built into it
@@ -20,7 +21,7 @@ type GenericButtonProps =
  */
 export function GenericButton(props: GenericButtonProps): ReactElement {
   const CustomButtonElement = () => (
-    <button {...props} className={styles.generic__button}>
+    <button style={props.style} className={styles.generic__button}>
       {props.children}
     </button>
   );
@@ -28,7 +29,7 @@ export function GenericButton(props: GenericButtonProps): ReactElement {
   if (props.href)
     return (
       <Link href={props.href} passHref={props.passHref}>
-        <a>
+        <a target={props.target}>
           <CustomButtonElement />
         </a>
       </Link>
