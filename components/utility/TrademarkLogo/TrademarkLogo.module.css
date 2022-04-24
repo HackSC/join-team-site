@@ -1,0 +1,6 @@
+#logoContainer {
+  position: relative; /* layout=fill makes Image absolute */
+  width: 20rem;
+  aspect-ratio: 5/4;
+  margin-bottom: 1rem;
+}

@@ -19,9 +19,9 @@ type GenericButtonProps =
  *  Prefer using this over a normal button; this has accessibility built into it
  *  When `href` is passed in, this functions like the custom button and a NextLink
  */
-export function GenericButton(props: GenericButtonProps): ReactElement {
+export default function GenericButton(props: GenericButtonProps): ReactElement {
   const CustomButtonElement = () => (
-    <button style={props.style} className={styles.generic__button}>
+    <button style={props.style} className={styles.genericButton}>
       {props.children}
     </button>
   );

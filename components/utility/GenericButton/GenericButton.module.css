@@ -1,11 +1,11 @@
-.generic__button {
+.genericButton {
   padding: 1rem;
   background-color: white;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.generic__button:hover {
+.genericButton:hover {
   transform: scale(1.1);
   transition-duration: 0.1s;
 }
