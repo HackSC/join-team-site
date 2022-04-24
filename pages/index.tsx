@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <div className={styles.main}>
         <Image
-          src="/images/hacksc22-flower.svg"
+          src="/images/hacksc22-flower.jpg"
           width={400}
           height={400}
           loading="eager"
