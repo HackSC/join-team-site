@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import styles from "./TrademarkLogo.module.css";
 import Image from "next/image";
+import HackSC22LogoPNG from "../../../public/images/hacksc22-flower.png";
 
 export interface TrademarkLogoProps {}
 
@@ -8,10 +9,10 @@ export default function TrademarkLogo(props: TrademarkLogoProps): ReactElement {
   return (
     <div id={styles.logoContainer}>
       <Image
-        src="/images/hacksc22-flower.png"
+        src={HackSC22LogoPNG}
         layout="fill"
         objectFit="fill"
-        loading="eager"
+        priority={true} // should load first
         alt="HackSC Logo"
       />
     </div>
