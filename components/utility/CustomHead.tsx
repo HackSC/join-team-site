@@ -1,5 +1,5 @@
-import type { ReactElement } from "react";
-import Head from "next/head";
+import type { ReactElement } from 'react';
+import Head from 'next/head';
 
 export interface CustomHeadProps {
   title?: string;
@@ -13,9 +13,9 @@ export interface CustomHeadProps {
  * titles that's good for accessibility
  */
 export default function CustomHead({
-  title = "Join our organizing team! - HackSC",
-  description = "Join our team!",
-  iconPath = "/images/favicon_64.png",
+  title = 'Join our organizing team! - HackSC',
+  description = 'Join our team!',
+  iconPath = '/images/favicon_64.png',
   children = null,
 }: CustomHeadProps): ReactElement {
   return (

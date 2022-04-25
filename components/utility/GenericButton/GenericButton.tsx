@@ -1,15 +1,15 @@
-import { LinkProps } from "next/link";
-import type { ReactElement } from "react";
-import React from "react";
-import styles from "./GenericButton.module.css";
-import Link from "next/link";
-import { UrlObject } from "url";
+import { LinkProps } from 'next/link';
+import type { ReactElement } from 'react';
+import React from 'react';
+import styles from './GenericButton.module.css';
+import Link from 'next/link';
+import { UrlObject } from 'url';
 
 // imagine not declaring in your library
 declare type Url = string | UrlObject;
 
 // overrides the LinkProps styles
-type OptionalLinkProps = Omit<LinkProps, "href"> & { href?: Url };
+type OptionalLinkProps = Omit<LinkProps, 'href'> & { href?: Url };
 type GenericButtonProps =
   | React.ButtonHTMLAttributes<any> &
       React.PropsWithChildren<OptionalLinkProps> &

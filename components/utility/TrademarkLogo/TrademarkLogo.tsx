@@ -1,7 +1,7 @@
-import type { ReactElement } from "react";
-import styles from "./TrademarkLogo.module.css";
-import Image from "next/image";
-import HackSC22LogoPNG from "../../../public/images/hacksc22-flower.png";
+import type { ReactElement } from 'react';
+import styles from './TrademarkLogo.module.css';
+import Image from 'next/image';
+import HackSC22LogoPNG from '../../../public/images/hacksc22-flower.png';
 
 export interface TrademarkLogoProps {}
 
